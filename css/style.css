@@ -1,0 +1,363 @@
+.header {
+  z-index: 99;
+  width: 100%;
+  padding: 20px 0;
+}
+nav a {
+  color: white !important;
+}
+nav a:hover {
+  color: teal !important;
+}
+nav li a.active {
+  color: teal !important;
+}
+nav .logo {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.65;
+}
+
+/* --------- hero ----------- */
+#hero .hero-img {
+  padding: 0 0 0 30px;
+  position: relative;
+}
+
+#hero .hero-img img::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+  background-image: url(../img/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+/* content info  */
+#hero .content-info h3 {
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.content-info .sub-title {
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.content-info p {
+  line-height: 1.6;
+  color: #748182;
+  margin: 20px 0;
+}
+.hero .skills .item {
+  margin-bottom: 30px;
+}
+.hero .skills .skills-progress {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #f7f7f7;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  position: relative;
+}
+
+.hero .skills .skills-progress h6 {
+  font-size: 13px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.hero .skills .skills-progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 95%;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.hero .skills .skills-progress span::after {
+  content: attr(data-value);
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 11px;
+  color: #fff;
+}
+
+.buton-bg {
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 13px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* -------caption -------- */
+.v-middle {
+  left: 0;
+  transform: translate(0%, -50%);
+  width: 100%;
+  top: 50%;
+  color: white;
+  z-index: 99;
+}
+
+.caption h5 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.caption h1 .iam {
+  font-size: 2em;
+  font-weight: 100;
+}
+.caption h1 .dev {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.social a span i {
+  padding: 0 10px;
+  font-size: larger;
+  color: white;
+}
+.social .one:hover {
+  color: #1877f2 !important;
+}
+.social .tow:hover {
+  color: #50abf1 !important;
+}
+.social .three:hover {
+  color: #0077b5 !important;
+}
+.social .four:hover {
+  color: #0054f7 !important;
+}
+.social .five:hover {
+  color: #fe0000 !important;
+}
+
+/* ----------------portfolio  -------------- */
+
+#portfolio {
+  padding: 100px 0 !important;
+}
+
+.portfolio h2 {
+  font-weight: bold;
+  color: #f1f1f1;
+  letter-spacing: 0.5rem;
+}
+.portfolio h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+#portfolio .head h3::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(/images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+
+#portfolio .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000000;
+  background-color: transparent;
+}
+#portfolio .nav-link {
+  color: #222222;
+  margin: 0 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+}
+#portfolio .item-caption-overlay {
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(10px);
+  transition: 0.5s;
+  opacity: 0;
+}
+#portfolio .item-caption-overlay:hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hoverZoomLink:hover {
+  transform: scale(2);
+  text-align: center;
+}
+
+.icons i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  background: #111;
+  color: #eee;
+}
+
+/* ------------- Services style ------------ */
+.bg-gray {
+  background-color: #f7f7f7;
+}
+.section-badding {
+  padding: 100px 0;
+}
+#service .head {
+  margin-bottom: 80px;
+}
+#service .head h3 {
+  font-weight: 900;
+  font-size: 40px;
+}
+#service .item {
+  padding: 50px 20px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+#service .item span i {
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+#service .item:hover i {
+  background: black;
+  color: white;
+}
+#service .item h6 {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+/* ------------- Number style ------------ */
+#numbers {
+  background-color: #f7f7f7;
+}
+.py-100 {
+  padding: 100px 0 !important;
+}
+
+#numbers h3 {
+  font-weight: 900;
+}
+#numbers .item p {
+  font-weight: 600;
+  line-height: 1.6;
+  color: #748182;
+}
+/* -----------contct us style --------------  */
+
+#contact .head {
+  margin-bottom: 80px;
+}
+#contact .head h3 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+#contact .item span i {
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  background: #f4f4f4;
+  line-height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+#contact .item:hover i {
+  background: black;
+  color: white;
+}
+
+#contact .item h6 {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
+#contact .item p {
+  line-height: 1.6;
+  font-size: 15px;
+  color: #748182;
+}
+
+#contact .form-group {
+  margin: 20px 0;
+}
+
+#contact input {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+}
+
+#contact textarea {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+}
+.buton-bg {
+  background: #1c1c1c !important;
+  color: #eee;
+  width: 20% !important;
+}
+.buton-bg:hover {
+  background: white !important;
+  color: #1c1c1c;
+  border-color: #1c1c1c;
+  border: 1px solid !important;
+}
+
+/* -------- footer --------- */
+footer {
+  background: #1c1c1c;
+  padding: 30px;
+}
+footer p {
+  color: #748182;
+  font-size: 13px;
+  word-spacing: 2px;
+  text-align: center;
+}
